@@ -8,9 +8,12 @@ body{
  font-family:leagueGothic;
  }
  #menubtn{
-  margin-top:10px;
+  margin-top:25px;
  }
 
+.jumbotron{
+    background: url("paper2.jpg")
+}
 .glyphicon{
 	color:#FFF;
 	font-size: 25px;
@@ -18,6 +21,7 @@ body{
 }
 #leaf{
 	float: right;
+    height: 70px;
 	
 }
 #name{
@@ -39,8 +43,8 @@ body{
 	border: 5px inset #101010;
 }
 #ch4{
-	height:32px;
-	margin-top: -7px;
+	height:80px;
+	margin-top: -10px;
 }
 #studentinfo{
     margin-top: 150px;
@@ -67,6 +71,16 @@ body{
 .sideText{
     font-size: 60px !important;
 }   
+
+.navbar{
+    height: 90px;
+}
+
+#c1row{
+    background-color:#F2F0F0;
+    border-radius: 25px;
+    border:1px inset #101010;
+}
 /*here is where the simple sidebar css starts*/
 
 
