@@ -1,81 +1,132 @@
 <html>
-	<head>
-		<title>Test Page </title>
-		<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
-		<link href="indexcss.css" rel="stylesheet">
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-	</head>
-	<body background="wood6.jpeg">
-		<nav class="navbar navbar-inverse">
-			<div class="container-fluid">
-				<div class=row>
-					<div class="navbar-header col-md-1">
-						<a class="navbar-brand" href="#">
-							<image src="https://s-media-cache-ak0.pinimg.com/236x/c4/6c/65/c46c6519103af8676ad42c45150651a0.jpg" id="ch4"></image> 
-						</a>
-					</div>
-					
-					<div class=col-md-8>
-					</div>
-					
-					
-					<div class=col-md-2>
-						<a href=# class="navbar-brand" id="leaf">
-							<img alt="Brand" src="http://www.sycamoreeducation.com/si
-							tes/all/themes/sycamore/logo.png" height="31" width"150">
 
-						</a>
-					</div>
-					<button class="btn btn-success" id="menubtn">
-						<span class="glyphicon glyphicon-align-justify"></span>
-					</button>
-				</div>
-			</div>
-		</nav>
+<head>
+    <title>Test Page </title>
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <link href="indexcss.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
 
-		    <div id="wrapper">
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class=row>
+                <div class="navbar-header col-md-1">
+                    <a class="navbar-brand" href="#">
+                        <image src="ch4.jpg" id="ch4"></image>
+                    </a>
+                </div>
+
+                <div class=col-md-8>
+                </div>
+
+
+                <div class=col-md-2>
+                    <a href=# class="navbar-brand" id="leaf">
+                        <img alt="Brand" src="leaf.png" height="31" width "150">
+
+                    </a>
+                </div>
+                <button class="btn btn-success" id="menubtn">
+                    <span class="glyphicon glyphicon-align-justify"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div id="wrapper">
 
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav" id="ul">
-                <li class="sidebar-brand5">
-                    <a href="#">
-                        Grades
-                    </a>
+                <li class="sidebar-brand5 sideText" id=grades>
+                    <a href="#">Grades</a>
                 </li>
-                <li class="sidebar-brand1" id="news">
+                <li class="sidebar-brand1 sideText" id="news">
                     <a href="#">News</a>
                 </li>
-                <li class="sidebar-brand2" id="contact">
+                <li class="sidebar-brand2 sideText" id="contact">
                     <a href="#">Contact</a>
                 </li>
-                <li class="sidebar-brand3" id="pan">
+                <li class="sidebar-brand3 sideText" id="pan">
                     <a href="#">Pass a Note</a>
                 </li>
-                <li class="sidebar-brand6" id="cal">
-                <a href="#"> Calendar</a>
+                <li class="sidebar-brand6 sideText" id="cal">
+                    <a href="#"> Calendar</a>
                 </li>
-                <li class="sidebar-brand4" id="dashboard">
+                <li class="sidebar-brand4 sideText" id="dashboard">
                     <a href="#">Dashboard</a>
                 </li>
             </ul>
-        </div>	
-        <div class="panel panel-default" id="gradepage">
+        </div>
+        <!--  <div class="panel panel-default" id="gradepage">
     <div class="panel-body">
 		
 		<image src="http://ak-hdl.buzzfed.com/static/2013-12/enhanced/webdr01/23/13/grid-cell-25294-1387822460-3.jpg" id="ron"></image>
 		<div class="panel panel-default" id="grades">
 			<h1>Add Fake Grades for demonstration stuffs</h1>
 			<div class="panel panel-default" id="lunchbox">
-				<h1> Mac & Cheese</h1>
+				<h1 id="lunchToday"> Mac & Cheese</h1>
+                 <h3 id="lunchLabel"> Tomorrow's lunch:</h3>
+                 <h2 id="lunchTomorrow">Pizza </h2>
 			</div>
 		</div>
     </div>
-</div>
-        <!-- /#sidebar-wrapper -->
-	</body>
+</div>  
+   <div class=container>
+        <div id="gradepage" class=jumbotron>
+            <table>
+                <tr>
+                    <td>
+                        <image src="http://ak-hdl.buzzfed.com/static/2013-12/enhanced/webdr01/23/13/grid-cell-25294-1387822460-3.jpg" id="ron"></image>
+                    </td>
+                    <td>
+                    </td>
+                    <td id=lunchbox>
+                        <h1 id="lunchToday"> Mac & Cheese</h1>
+                        <h3 id="lunchLabel"> Tomorrow's lunch:</h3>
+                        <h2 id="lunchTomorrow">Pizza </h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan=3 id=grades>
+                        <h1>Add Fake Grades for demonstration stuffs</h1>
+                    </td>
+                </tr>
+            </table>
+        </div>
+      </div> -->
+      <div class=container>
+        <div class=jumbotron>
+            <div class=row>
+                <div class=col-lg-3>
+                     <image src="ron.jpg" id="ron"></image>
+                </div>
+                    <div class=col-lg-2 id=studentinfo>
+                     <h2> Ron Bergandy <br> 8th Grade</h2>
+                    </div>
+                    <div class=col-lg-3></div>
+                    <div class=col-lg-4 id=lunchbox>
+                         <h1 id="lunchToday"> Mac & Cheese</h1>
+                        <h3 id="lunchLabel"> Tomorrow's lunch:</h3>
+                        <h2 id="lunchTomorrow">Pizza </h2>
+                    </div>
+            </div>
+            <div class=container id=gradeContainer>
+                <div class=row>
+                    <div class=col-lg-2 id="c1grades">
+                        <h2 class=classname>Class Name</h2>
+                        <h3 class=teachername> Teacher Name</h3>
+                    </div>
+              </div>  
+              </div>
+        </div>
+      </div> 
+      
+</body>
+
 </html>

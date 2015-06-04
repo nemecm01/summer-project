@@ -1,20 +1,16 @@
-h1{
+h1, h2, h3{
 text-align:center;
 }
 body{
  margin: 0;
  background:url('wood.jpg');
- background-size: 2560px 1600px;
  background-repeat:repeat;
+ font-family:leagueGothic;
  }
  #menubtn{
   margin-top:10px;
  }
-h3{
-	color:#CECECE;
-	float: left;
-	margin-top: 20px;
-}
+
 .glyphicon{
 	color:#FFF;
 	font-size: 25px;
@@ -31,15 +27,15 @@ h3{
 #gradepage{
 	margin-left: 50px;
 	margin-right: 50px;
-	height: 670px;
-	width:1100px;
+	height: 690px;
+	width: 90%;
 	border: 2px solid #232323;
 	background: url("paper2.jpg");
+    border-radius: 25px;
 }
 #ron{
-	height:250;
-	margin-top:20px;
-	margin-left: 20px;
+	height:250px;
+
 	border: 5px inset #101010;
 }
 #ch4{
@@ -47,29 +43,30 @@ h3{
 	margin-top: -7px;
 }
 #studentinfo{
-	margin-left:200px;
-	margin-top: -90px;
-	margin-right: 660px;
-	background-color:#FFF2DF;
-	border:2px inset #101010;
-	
+    margin-top: 150px;
+   
+	margin-left: -50px;
 }
-#grades{
-	margin-left: 20px;
-	width: 1040px;
-	height: 360; 
-	margin-top: 10px;
-	margin-right: 10px;
-	border: 2px inset #171717;
-}
+
+
 #lunchbox{
-	 width:400px;
-	 height: 250px;
-	 margin-left: 640px;
-	 margin-right: 100px;
-	 margin-top:-340px;
+
 	 border: 2px inset #171717;
+     border-radius: 25px;
+     background-color: #BFC7FB;
+     
 }
+#lunchToday{
+    margin-bottom: 10px;
+}
+#lunchLabel{
+    margin-bottom:10px;
+    
+}     
+
+.sideText{
+    font-size: 60px !important;
+}   
 /*here is where the simple sidebar css starts*/
 
 
@@ -89,7 +86,7 @@ h3{
     z-index: 1000;
     position: fixed;
     left: 250px;
-    width: 0;
+    width: 10%;
     height: 100%;
     margin-left: -230px;
     overflow-y: auto;
@@ -122,7 +119,7 @@ h3{
 .sidebar-nav {
     position: absolute;
     top: 0;
-    width: 250px;
+    width: 100%;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -230,5 +227,21 @@ h3{
         position: relative;
         margin-right: 0;
     }
+}
+@font-face{
+    font-family:leagueGothic;
+    src: url(LeagueGothic-Regular.otf)
+}
+
+.teachername, .classname{
+    margin:0 !important;
+}
+#c1grades{
+    padding-top: 10px;
+}
+#gradeContainer{
+    margin-top: 30px;
+    border-radius: 25px;
+    border:1px inset #101010;
 }
 
