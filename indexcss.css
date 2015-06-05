@@ -266,7 +266,10 @@ body{
 #grade-table{
 	font-size: 20px;
 	text-align: center;
-	margin-top:20px;
-	 border-radius: 25px;
-	border: 2px solid #101010;
+	
+	}
+.navTab{
+    font-size:17px;
+    margin-top:15px;
+    border: 1px solid #101010;
 }
