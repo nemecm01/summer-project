@@ -203,7 +203,7 @@ body{
     height: 65px;
     font-size: 18px;
     line-height: 60px;
-    background-color:#FDA226;
+    background-color:#FDA226 !important;
   
 }
 .sidebar-nav > .sidebar-brand a {
@@ -247,15 +247,26 @@ body{
     src: url(LeagueGothic-Regular.otf)
 }
 
-.teachername, .classname{
-    margin:0 !important;
+.thead{
+	text-align:center;
+	font-size: 24px !important;
 }
+ .classname{
+  margin-top:20px;
+  margin-bottom: 5px;
+ }
 #c1grades{
     padding-top: 10px;
 }
 #gradeContainer{
     margin-top: 30px;
     border-radius: 25px;
-    border:1px inset #101010;
+    border:3px inset #101010;
 }
-
+#grade-table{
+	font-size: 20px;
+	text-align: center;
+	margin-top:20px;
+	 border-radius: 25px;
+	border: 2px solid #101010;
+}
