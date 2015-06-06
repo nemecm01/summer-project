@@ -26,17 +26,17 @@
 
 
                 <div class=col-md-2>
-                    <a href=# class="navbar-brand" id="leaf">
+                    <a href="http://www.sycamoreeducation.com/" class="navbar-brand" id="leaf">
                         <img alt="Brand" src="leaf.png">
 
                     </a>
                 </div>
-                <center> 
-					 <a href="https://youtu.be/2rZPrDct1gY?t=54s">
-                    <button class="btn btn-success" id="menubtn">
-                        <span class="glyphicon glyphicon-align-justify"></span>
-                 
-                    </button>
+                <center>
+                    <a href="https://youtu.be/2rZPrDct1gY?t=54s">
+                        <button class="btn btn-success" id="menubtn">
+                            <span class="glyphicon glyphicon-align-justify"></span>
+
+                        </button>
                     </a>
                 </center>
             </div>
@@ -141,76 +141,101 @@
 							<h2>Grade</h2>
                         </div>
                        -->
-                       <div class="navTab">
-    <ul class="nav nav-tabs">
-        <li class="active"><a href="#">Grades</a></li>
-        <li><a href="#">Homework</a></li>
-        <li><a href="#">Missing Assignments</a></li> 
-        <li><a href="#">Teachers</a></li>
-    </ul>
+                <div class="navTab">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#">Grades</a></li>
+                        <li><a href="#">Homework</a></li>
+                        <li><a href="#">Missing Assignments</a></li>
+                        <li><a href="#">Teachers</a></li>
+                    </ul>
 
-                            <table class="table table-bordered" id="grade-table">
-        <thead>
-            <tr>
-				 <th class=thead>Class</th>
-                <th class=thead>Teacher Name</th>
-                <th class=thead>Date Posted</th>
-                <th class=thead>Grade %</th>
-                <th class=thead>Letter Grade</th>
+                    <table class="table table-bordered" id="grade-table">
+                        <thead>
+                            <tr>
+                                <th class=thead>Class</th>
+                                <th class=thead>Teacher Name</th>
+                                <th class=thead>Subject</th>
+                                <th class=thead>Date Posted</th>
+                                <th class=thead>Grade %</th>
+                                <th class=thead>Letter Grade</th>
 
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-				 <div class=col-lg-2>
-                <td>Biology</td>
-                </div>
-                <div class=col-lg-2>
-                <td>John Manning</td>
-                </div>
-                <div class=col-lg-2>
-                <td>06/4/15</td>
-                </div>
-                <div class=col-lg-2>
-                <td>88.56</td>
-                </div>
-                <div class=col-lg-2>
-                <td>
-					<a href="https://youtu.be/2rZPrDct1gY?t=54s">
-                    <button class="btn btn-info" id="gradebtn">B
-                    </button>
-                    </a></td>
-                    </div>
-            </tr>
-            <tr>
-                <td>Math</td>
-                <td>Peter Parker</td>
-                <td>05/22/15</td>
-                <td>80.9</td>
-                   <td>
-					<a href="https://youtu.be/2rZPrDct1gY?t=54s">
-                    <button class="btn btn-info" id="gradebtn">C
-                    </button>
-                    </a></td>
-            </tr>
-            <tr>
-                <td>English</td>
-                <td>Jim Raynor</td>
-                <td>04/20/15</td>
-                <td>93.4</td>
-                   <td>
-					<a href="https://youtu.be/2rZPrDct1gY?t=54s">
-                    <button class="btn btn-info" id="gradebtn">A
-                    </button>
-                    </a></td>
-            </tr>
-        </tbody>
-    </table>
-    </div>
-                    </div>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <div class=col-lg-2>
+                                    <td>Biology</td>
+                                </div>
+                                <div class=col-lg-2>
+                                    <td>John Manning</td>
+                                </div>
+                                <td></td>
+                                <div class=col-lg-2>
+                                    <td>06/4/15</td>
+                                </div>
+                                <div class=col-lg-2>
+                                    <td>88.56</td>
+                                </div>
+                                <div class=col-lg-2>
+                                    <td>
+                                        <a href="https://youtu.be/2rZPrDct1gY?t=54s">
+                                            <button class="btn btn-info" id="gradebtn" data-toggle="modal" data-target="#myModal1">B
+                                            </button>
+                                        </a>
+                                    </td>
+                                </div>
+                            </tr>
+                            <tr>
+                                <td>Math</td>
+                                <td>Peter Parker</td>
+                                <td></td>
+                                <td>05/22/15</td>
+                                <td>80.9</td>
+                                <td>
+                                    <a href="https://youtu.be/2rZPrDct1gY?t=54s">
+                                        <button class="btn btn-info" id="gradebtn" data-toggle="modal" data-target="#myModal1">C
+                                        </button>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>English</td>
+                                <td>Jim Raynor</td>
+                                <td></td>
+                                <td>04/20/15</td>
+                                <td>93.4</td>
+                                <td>
+
+                                    <button class="btn btn-info" id="gradebtn" data-toggle="modal" data-target="#myModal1">A
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="modal" id=myModal1>
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="btn btn-colse" data-dismiss="modal">x</button>
+                    <br>
+                    <h3 class="modal-title">Assignments in (insert class)</h3>
+                
+                </div>
+                <div class="modal-body">
+                        <h1>instert Grade Table Here</h1>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-default" data-dismiss="modal">close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
 
 </body>
 

@@ -272,4 +272,9 @@ body{
     font-size:17px;
     margin-top:15px;
     border: 1px solid #101010;
+    background-color: #F5EDED;
+    
+}
+#gradebtn{
+    color: black;
 }
