@@ -286,3 +286,8 @@ body{
     -moz-animation:spin 4s linear infinite;
     animation:spin 4s linear infinite;
 }
+.optionBtn{
+    color: black;
+    font-size: 64px;
+    margin-bottom: 15px;
+}
