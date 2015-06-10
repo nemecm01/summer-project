@@ -3,7 +3,7 @@ text-align:center;
 }
 body{
  margin: 0;
- background:url('wood.jpg');
+ background:url('imgs/wood.jpg');
  background-repeat:repeat;
  font-family:leagueGothic;
  }
@@ -12,7 +12,7 @@ body{
  }
 
 .jumbotron{
-    background: url("paper2.jpg")
+    background: url("imgs/paper2.jpg")
 }
 .glyphicon{
 	color:#FFF;
@@ -34,7 +34,7 @@ body{
 	height: 690px;
 	width: 90%;
 	border: 2px solid #232323;
-	background: url("paper2.jpg");
+	background: url("imgs/paper2.jpg");
     border-radius: 25px;
 }
 #ron{
@@ -104,7 +104,7 @@ body{
     height: 100%;
     margin-left: -230px;
     overflow-y: auto;
-    background: url('black.jpg');
+    background: url('imgs/black.jpg');
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -266,15 +266,23 @@ body{
 #grade-table{
 	font-size: 20px;
 	text-align: center;
-	
 	}
 .navTab{
     font-size:17px;
     margin-top:15px;
     border: 1px solid #101010;
     background-color: #F5EDED;
-    
 }
 #gradebtn{
     color: black;
+}
+#info{
+    border:1px solid #101010;
+    margin-top: -1px;
+    background-color: #F5EDED;
+}
+.glyphicon-cog {
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
 }
