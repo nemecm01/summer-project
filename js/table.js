@@ -38,6 +38,3 @@ td.text('some text');
 row.append(td);
 table.append(row);
 
-for (var i = 0; i < array.length; i++) {
-        
-}

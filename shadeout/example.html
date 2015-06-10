@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>shadeout</title>
+<meta charset="utf-8">
+<script src='jquery-2.1.4.min.js'></script>
+<script src='shadeout.js'></script>
+<script>
+$(document).ready(function() {
+    $('ul').shadeout({});
+
+    $('tbody').shadeout({
+        color: '#ff0000',
+        increment: 75
+    });
+
+    $('div').shadeout({
+        color: '#33cc33',
+        color2: '#ff00ff',
+        increment: 25
+    });
+});
+</script>
+</head>
+<body>
+<ul style='width:20%;list-style-type:none;margin-left:-38px;'>
+<li>1</li>
+<li>2</li>
+<li>3</li>
+<li>4</li>
+<li>5</li>
+<li>6</li>
+<li>7</li>
+</ul>
+
+<table style='width:20%;margin-top:20px;'>
+<tr><td>1</td></tr>
+<tr><td>2</td></tr>
+<tr><td>3</td></tr>
+<tr><td>4</td></tr>
+</table>
+
+<div style='width:20%;margin-top:20px;'>
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+<div>5</div>
+<div>6</div>
+<div>7</div>
+<div>8</div>
+<div>9</div>
+<div>10</div>
+</div>
+</body>
+</html>

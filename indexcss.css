@@ -12,7 +12,7 @@ body{
  }
 
 .jumbotron{
-    background: url("imgs/paper2.jpg")
+    background: url("imgs/dots.jpg")
 }
 .glyphicon{
 	color:#FFF;
@@ -21,7 +21,7 @@ body{
 }
 #leaf{
 	float: right;
-    height: 70px;
+    height: 50px;
 	
 }
 #name{
@@ -48,8 +48,9 @@ body{
 }
 #studentinfo{
     margin-top: 150px;
-   
+    color: black;
 	margin-left: -50px;
+    margin-bottom:5px;
 }
 
 
@@ -166,7 +167,6 @@ body{
     height: 65px;
     font-size: 18px;
     line-height: 60px;
-    background-color:#2BA624;
     border-width: 15px;
     border-color:#1B1B1B;
 }
@@ -176,36 +176,29 @@ body{
     height: 65px;
     font-size: 18px;
     line-height: 60px;
-    background-color:#0704C1;
 }
 
 .sidebar-nav > .sidebar-brand6 {
     height: 65px;
     font-size: 18px;
     line-height: 60px;
-    background-color:#B6048B;
 }
 .sidebar-nav > .sidebar-brand2 {
     height: 65px;
     font-size: 18px;
     line-height: 60px;
-    background-color:#6F4501;
-  
 }
 .sidebar-nav > .sidebar-brand3 {
     height: 65px;
     font-size: 18px;
     line-height: 60px;
-    background-color:#FF2D2F;
-  
 }
 .sidebar-nav > .sidebar-brand4 {
     height: 65px;
     font-size: 18px;
     line-height: 60px;
-    background-color:#FDA226 !important;
-  
 }
+*/
 .sidebar-nav > .sidebar-brand a {
     color: #999999;
 }
@@ -290,4 +283,7 @@ body{
     color: black;
     font-size: 64px;
     margin-bottom: 15px;
+}
+#navbar{
+    background: url('imgs/paper2.jpg')
 }

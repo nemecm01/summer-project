@@ -6,19 +6,30 @@
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <script src="js/table.js"></script>
+    <script src="shadeout/shadeout.js"></script>
+    <script src="js/options.js"></script>
+    <script src="js/jscolor.js"></script>
     <link href="indexcss.css" rel="stylesheet">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        $(document).ready(function() {
+            $('.sidebar-nav').shadeout({
+                color: '#0D23E8',
+                increment: 15
+            });
+        });
+    </script>
 </head>
 
 <body>
-    <nav class="navbar navbar-inverse">
+    <nav class="navbar navbar-default" id="navbar">
         <div class="container-fluid">
             <div class=row>
                 <div class="navbar-header col-md-1">
                     <a class="navbar-brand" href="#">
-                        <image src="imgs/ch4.png" id="ch4"></image>
+                        <image src="imgs/bulldog.png" id="ch4"></image>
                     </a>
                 </div>
 
@@ -33,11 +44,11 @@
                     </a>
                 </div>
                 <center>
-                   
-                        <button class="btn btn-success" id="menubtn" data-toggle="modal" data-target="#optionModal">
-                            <span class="glyphicon glyphicon-cog"></span>
 
-                        </button>
+                    <button class="btn btn-success" id="menubtn" data-toggle="modal" data-target="#optionModal">
+                        <span class="glyphicon glyphicon-cog"></span>
+
+                    </button>
                     </a>
                 </center>
             </div>
@@ -50,12 +61,12 @@
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav" id="ul">
                 <li class="sidebar-brand5 sideText" id=grades>
-                    <a href="https://youtu.be/2rZPrDct1gY?t=54s">Grades</a>
+                    <a href="#">Grades</a>
                 </li>
                 <li class="sidebar-brand1 sideText" id="news">
                     <a href="#">News</a>
                 </li>
-                <li class="sidebar-brand2 sideText" id="contact">
+                <li class="sidebar-brand2 sideText" id="contact"> 
                     <a href="#">Contact</a>
                 </li>
                 <li class="sidebar-brand3 sideText" id="pan">
@@ -113,7 +124,8 @@
                         <image src="imgs/ron.jpg" id="ron"></image>
                     </div>
                     <div class=col-lg-2 id=studentinfo>
-                        <h2> Ron Bergandy <br> 8th Grade</h2>
+                        <h2> Ron Bergandy</h2>
+                        <h2>8th Grade</h2>
                     </div>
                     <div class=col-lg-3></div>
                     <div class=col-lg-4 id=lunchbox>
@@ -220,7 +232,6 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button class="btn btn-close" data-dismiss="modal">x</button>
-                    <br>
                     <h3 class="modal-title">Assignments in (insert class)</h3>
 
                 </div>
@@ -239,19 +250,14 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button class="btn btn-close" data-dismiss="modal">x</button>
-                    <br>
                     <h1 class="modal-title">Options</h1>
                 </div>
-                <div class="modal-body">
-                 <center>
-                     <a href="https://youtu.be/2rZPrDct1gY?t=54s">
-                        <button class="btn btn-info optionBtn" id="colorChange">Change Color</button>
-                        <br>
+                <div class="modal-body" id="optionModalBody">
+                    <center>
+                            <button class="btn btn-info optionBtn" id="colorChange" onclick="colorChange()">Change Color</button>
                             <button class="btn btn-info optionBtn" id="themeChange">Change Theme</button>
-                            <br>
-                                <button class="btn btn-info optionBtn" id="feedback">Feedback</button>
-                                </a>
-                                </center>
+                            <button class="btn btn-info optionBtn" id="feedback">Feedback</button>
+                    </center>
                 </div>
                 <div class="modal-footer">
                     <button class="btn btn-default" data-dismiss="modal">close</button>
