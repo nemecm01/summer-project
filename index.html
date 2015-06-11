@@ -2,7 +2,7 @@
 
 <head>
     <title>Test Page </title>
-    <script src="js/jquery.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <script src="js/table.js"></script>
@@ -10,14 +10,15 @@
     <script src="js/options.js"></script>
     <script src="js/jscolor.js"></script>
     <link href="indexcss.css" rel="stylesheet">
+    <link href="news-page/news.css" rel="stylesheet">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script>
         $(document).ready(function() {
             $('.sidebar-nav').shadeout({
-                color: '#0D23E8',
-                increment: 15
+                color: '#E41B1B',
+                increment: 10
             });
         });
     </script>
@@ -61,10 +62,10 @@
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav" id="ul">
                 <li class="sidebar-brand5 sideText" id=grades>
-                    <a href="#">Grades</a>
+                    <a onclick=goGrades()>Grades</a>
                 </li>
-                <li class="sidebar-brand1 sideText" id="news">
-                    <a href="#">News</a>
+                <li class="sidebar-brand1 sideText" id="news" onclick="goNews()">
+                    <a onclick=goNews()>News</a>
                 </li>
                 <li class="sidebar-brand2 sideText" id="contact"> 
                     <a href="#">Contact</a>
@@ -118,7 +119,7 @@
         </div>
       </div> -->
         <div class=container>
-            <div class=jumbotron>
+            <div class=jumbotron id=mainPage>
                 <div class=row>
                     <div class=col-lg-3>
                         <image src="imgs/ron.jpg" id="ron"></image>
