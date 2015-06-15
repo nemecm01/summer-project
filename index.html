@@ -2,7 +2,7 @@
 
 <head>
     <title>Test Page </title>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/jquery.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <script src="js/table.js"></script>
@@ -15,9 +15,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script>
+        var color1 = $("#colorPicker").val();
+        
         $(document).ready(function() {
             $('.sidebar-nav').shadeout({
-                color: '#E41B1B',
+                color: color1,
                 increment: 10
             });
         });
@@ -77,7 +79,7 @@
                     <a href="#"> Calendar</a>
                 </li>
                 <li class="sidebar-brand4 sideText" id="dashboard">
-                    <a href="#">Dashboard</a>
+                    <a onclick=goDash()>Dashboard</a>
                 </li>
             </ul>
         </div>
@@ -150,21 +152,22 @@
                         </div>
                         <div class=col-lg-2>
                         <h2 class=posted>Posted</h2>
-                        </div>
+                        </div>  
                         <div class=col-lg-4>
 							<h2>Grade</h2>
                         </div>
                        -->
                 <div class="navTab">
-                    <ul class="nav nav-tabs">
-                        <li class="tab active" id="gradetab"><a href="#">Grades</a></li>
+                    <ul class="nav nav-pills">
+                        <li class="tab active" id="gradetab"><a onclick="gradeTable()">Grades</a></li>
                         <li class="tab" id="hwtab"><a href="#">Homework</a></li>
                         <li class="tab" io="missingtab"><a href="#">Missing Assignments</a></li>
-                        <li class="tab" id="teachertab"><a href="#">Teachers</a></li>
+                        <li class="tab" id="teachertab"><a onclick="teacherContact()">Teachers</a>
+                        </li>
                     </ul>
                 </div>
                 <div id=info>
-                    <table class="table table-bordered" id="grade-table">
+                    <table class="table table-bordered" id="gradeTable">
                         <thead>
                             <tr>
                                 <th class=thead>Class</th>
@@ -180,10 +183,10 @@
                         <tbody>
                             <tr>
                                 <div class=col-lg-2>
-                                    <td>Biology</td>
+                                    <td>Juke Class</td>
                                 </div>
                                 <div class=col-lg-2>
-                                    <td>John Manning</td>
+                                    <td>Siv HD</td>
                                 </div>
                                 <td></td>
                                 <div class=col-lg-2>
@@ -200,8 +203,8 @@
                                 </div>
                             </tr>
                             <tr>
-                                <td>Math</td>
-                                <td>Peter Parker</td>
+                                <td>Jungle Tips</td>
+                                <td>FoxDrop</td>
                                 <td></td>
                                 <td>05/22/15</td>
                                 <td>80.9</td>
@@ -255,7 +258,7 @@
                 </div>
                 <div class="modal-body" id="optionModalBody">
                     <center>
-                            <button class="btn btn-info optionBtn" id="colorChange" onclick="colorChange()">Change Color</button>
+                            <button class="btn btn-info optionBtn" id="colorChange" onclick="changeC()">Change Color</button>
                             <button class="btn btn-info optionBtn" id="themeChange">Change Theme</button>
                             <button class="btn btn-info optionBtn" id="feedback">Feedback</button>
                     </center>

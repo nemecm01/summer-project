@@ -1,3 +1,7 @@
+.teacherBtn{
+    color: black;
+    font-size:20px;
+}
 h1, h2, h3{
 text-align:center;
 }
@@ -255,6 +259,7 @@ body{
     margin-top: 30px;
     border-radius: 25px;
     border:3px inset #101010;
+    height
 }
 #grade-table{
 	font-size: 20px;
@@ -263,21 +268,24 @@ body{
 .navTab{
     font-size:17px;
     margin-top:15px;
-    border: 1px solid #101010;
     background-color: #F5EDED;
 }
 #gradebtn{
     color: black;
 }
 #info{
-    border:1px solid #101010;
+    height:220px;
+    overflow:auto;
     margin-top: -1px;
     background-color: #F5EDED;
 }
 .glyphicon-cog {
-    -webkit-animation:spin 4s linear infinite;
-    -moz-animation:spin 4s linear infinite;
-    animation:spin 4s linear infinite;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  transition: transform .8s ease-in-out;
+}
+.glyphicon-cog:hover {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 .optionBtn{
     color: black;
@@ -286,4 +294,72 @@ body{
 }
 #navbar{
     background: url('imgs/paper2.jpg')
+}
+#mainpage {
+     height:650px;
+    overflow:auto;
+}
+#newsHeader{
+    margin-top: -25px;
+}
+#pip1{
+   background-color: #198607;
+   
+}
+#pip2{
+   background-color: #BE6901;
+   
+}
+#pip3{
+   background-color: #000082;
+   
+}
+#pip4{
+   background-color: #9D0608;
+   
+}
+#pip5{
+   background-color: #B6AE0A;
+   
+}
+.pipGlyph{
+     font-size: 64pt;
+     vertical-align: middle;
+     margin-top:15%;
+}
+#insidePip1{
+     background-color: #27CE0D;
+}
+#insidePip2{
+     background-color: orange;
+}
+#insidePip3{
+     background-color: blue;
+}
+#insidePip4{
+     background-color: red;
+}
+#insidePip5{
+     background-color: #E6E600;
+}
+.pip{
+    padding: 0px;
+    border-radius: 25px;
+    box-shadow: 10px 10px 5px #888888;
+}
+.insidePip{
+    height:150px;
+    width: 90%;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.pipText{
+    margin-top: 5px;
+    color: white;
+}
+.row2{
+    margin-top: 25px
+}
+.collapse{
+ margin-top: 25px;
 }

@@ -1,4 +1,4 @@
-function colorChange(){
+function changeC(){
         $('#optionModalBody').html("");
         $('#optionModalBody').load('options.html',function(){
               jscolor.init();
@@ -17,12 +17,28 @@ function goGrades(){
         
 }
 
-$("#saveColor").on("click",function(){
-        var answer=confirm("Are you sure you want this color?")
+function changeColor(){
+        var answer=confirm("Are you sure you want this color?");
+        console.log(answer);
         if(answer){
                   $('.sidebar-nav').shadeout({
-                color: '#0D23E8',
+                color: $("#colorPicker").val(),
                 increment: 10
             });
             }
-        })
+        }
+function teacherContact(){
+        $('#info').html("");
+        $('#info').load('teacherInfo.html');
+        
+}
+function gradeTable(){
+        $('#info').html("");
+        $('#info').load('gradeTable.html');
+        
+}
+function goDash(){
+        $('#mainPage').html("");
+        $('#mainPage').load('dashboard.html');
+        
+}
